@@ -120,8 +120,8 @@ export default function Hero() {
 }
 
 function PortfolioSection({ title, items }) {
-    return <div className="mt-4">
-            <h2 className="mt-4 mb-3">{title}:</h2>
+    return <div className="">
+            <h2 className="">{title}:</h2>
 
             <div className="d-flex flex-column gap-3">
                 {items.map(item =>
@@ -185,7 +185,7 @@ function LinksList({ links }) {
 }
 
 function SelfieOfMe() {
-    return <Picture imgSrc={"standing-selfie.jpg"} text={"Me"} />;
+    return <Picture imgSrc={"zoe-new-glasses.jpg"} text={"Me in my room in my lord lady's basement"} />;
 }
 
 function Picture({ imgSrc, text }) {
