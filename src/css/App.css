@@ -210,26 +210,47 @@ body {
 
 @media print {
     @page {
-        size: letter;
+        size: letter portrait;
         margin: 0;
     }
 
+    html,
     body {
+        margin: 0;
+        padding: 0;
         background: white;
     }
 
     .article-18-page {
+        display: block;
         min-height: 0;
+        margin: 0;
         padding: 0;
     }
 
     .article-18-flyer {
         width: 8.5in;
-        height: 11in;
-        min-height: 11in;
+        height: 10.8in;
+        min-height: 0;
 
-        padding: 0.75in;
+        margin: 0;
+        padding: 0.65in 0.75in;
 
         box-shadow: none;
+        overflow: hidden;
+    }
+
+    .contract-quote {
+        margin-top: 2.75rem;
+        padding-top: 2.75rem;
+        padding-bottom: 2.75rem;
+    }
+
+    .definition-section {
+        margin-top: 3rem;
+    }
+
+    .flyer-footer {
+        margin-top: 3.5rem;
     }
 }
