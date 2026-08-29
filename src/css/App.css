@@ -214,6 +214,11 @@ body {
         margin: 0;
     }
 
+    * {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+
     html,
     body {
         margin: 0;
@@ -230,27 +235,27 @@ body {
 
     .article-18-flyer {
         width: 8.5in;
-        height: 10.8in;
+        height: 11in;
         min-height: 0;
 
         margin: 0;
-        padding: 0.65in 0.75in;
+        padding: 0.6in 0.75in;
 
         box-shadow: none;
         overflow: hidden;
     }
 
     .contract-quote {
-        margin-top: 2.75rem;
-        padding-top: 2.75rem;
-        padding-bottom: 2.75rem;
+        margin-top: 2.5rem;
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
     }
 
     .definition-section {
-        margin-top: 3rem;
+        margin-top: 2.75rem;
     }
 
     .flyer-footer {
-        margin-top: 3.5rem;
+        margin-top: 3rem;
     }
 }

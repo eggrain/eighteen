@@ -1,4 +1,4 @@
-export default function Hero() {
+export default function One() {
     return (
         <main className="article-18-page">
             <article className="article-18-flyer">

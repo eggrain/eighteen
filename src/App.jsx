@@ -1,4 +1,4 @@
-import Eighteen from "./Eighteen";
+import Eighteen from "./One";
 
 import "./css/App.css";
 
