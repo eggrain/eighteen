@@ -12,7 +12,7 @@ export default function One() {
                     </h1>
 
                     <div className="section-name">
-                        Section 1 — Safety
+                        Section 1 — Employees' Rights
                     </div>
                 </header>
 
