@@ -19,7 +19,7 @@ export default function One() {
                 <section className="contract-quote">
                     <div className="quote-mark">“</div>
 
-                    <blockquote>
+                    <blockquote style={{ fontSize: "30px" }}>
                         Under no circumstances will an employee be required or
                         assigned to engage in any activity involving dangerous
                         conditions of work
