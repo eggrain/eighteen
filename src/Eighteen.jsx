@@ -22,7 +22,7 @@ export default function Hero() {
                     <blockquote>
                         Under no circumstances will an employee be required or
                         assigned to engage in any activity involving dangerous
-                        conditions of work.
+                        conditions of work
                     </blockquote>
 
                     <div className="quote-mark quote-mark-bottom">”</div>
@@ -36,6 +36,25 @@ export default function Hero() {
                     <p className="definition">
                         involving possible injury, harm, damage, or other
                         serious risk.
+                    </p>
+                </section>
+
+                <section className="safety-action-section">
+                    <div className="safety-action-label">
+                        IF YOU BELIEVE YOU COULD BE INJURED
+                    </div>
+
+                    <p className="safety-action">
+                        Stop and tell your supervisor about the dangerous
+                        condition. Explain the risk of injury and ask for a
+                        safe work environment or a safe way to perform the work.
+                    </p>
+
+                    <p className="safety-reminder">
+                        You are reporting a safety concern — not simply refusing
+                        to work. Article 18 states that under no circumstances
+                        should an employee be required to work under dangerous
+                        conditions.
                     </p>
                 </section>
 
