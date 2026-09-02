@@ -1,0 +1,158 @@
+/* ARTICLE 18 — PAGE THREE */
+
+.article-18-three-page {
+    padding: 3rem 1rem;
+}
+
+.article-18-three {
+    width: 100%;
+    max-width: 8.5in;
+    min-height: 11in;
+    padding: 0.55in 0.65in 0.4in;
+
+    display: flex;
+    flex-direction: column;
+
+    background: var(--paper);
+    color: var(--ink);
+}
+
+.three-header {
+    text-align: center;
+    border-bottom: 4px solid var(--pink);
+    padding-bottom: 0.2in;
+}
+
+.three-contract-name {
+    margin-bottom: 0.08in;
+
+    color: var(--pink-dark);
+    font-size: 0.9rem;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+}
+
+.three-header h1 {
+    margin: 0;
+
+    color: var(--pink-dark);
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 1;
+    letter-spacing: 0.04em;
+}
+
+.three-section-name {
+    margin-top: 0.1in;
+
+    font-size: 1.15rem;
+    font-weight: 700;
+}
+
+.three-quote {
+    position: relative;
+
+    margin: 0.42in 0 0.32in;
+    padding: 0.42in 0.42in;
+
+    background: #faf5fc;
+    border-left: 8px solid var(--pink-dark);
+}
+
+.three-quote-mark {
+    position: absolute;
+    top: -0.08in;
+    left: 0.12in;
+
+    color: var(--pink-light);
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 4.5rem;
+    font-weight: 900;
+    line-height: 1;
+}
+
+.three-quote-mark-bottom {
+    top: auto;
+    right: 0.12in;
+    bottom: -0.38in;
+    left: auto;
+}
+
+.three-contract-quote {
+    position: relative;
+    z-index: 1;
+
+    margin: 0;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.75rem;
+    font-weight: 700;
+    line-height: 1.32;
+    text-align: center;
+}
+
+.three-action-section {
+    padding: 0.28in 0.35in;
+
+    border: 5px solid var(--pink-dark);
+    text-align: center;
+}
+
+.three-action-label {
+    margin-bottom: 0.12in;
+
+    color: var(--pink-dark);
+    font-size: 2rem;
+    font-weight: 900;
+    line-height: 1;
+    letter-spacing: 0.035em;
+}
+
+.three-action {
+    margin: 0;
+
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.35;
+}
+
+.three-footer {
+    margin-top: auto;
+    padding-top: 0.18in;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+
+    border-top: 2px solid #cccccc;
+    font-size: 0.8rem;
+}
+
+.three-footer span {
+    text-align: right;
+}
+
+@media print {
+    .article-18-three-page {
+        min-height: auto;
+        padding: 0;
+        background: white;
+    }
+
+    .article-18-three {
+        width: 8.5in;
+        height: 11in;
+        min-height: 0;
+        max-width: none;
+        margin: 0;
+        padding: 0.45in 0.6in 0.35in;
+
+        box-shadow: none;
+        overflow: hidden;
+        break-after: page;
+        page-break-after: always;
+
+        print-color-adjust: exact;
+        -webkit-print-color-adjust: exact;
+    }
+}
