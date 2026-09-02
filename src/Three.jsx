@@ -15,27 +15,15 @@ export default function Three() {
                 </header>
 
                 <section className="three-quote">
-                    <div className="three-quote-mark">“</div>
+                    <div className="three-quote-mark">"</div>
 
-                    <p className="three-emphasis">
-                        Employees shall immediately,
+                    <p className="three-contract-quote">
+                        Employees shall immediately, or at the end of their shifts, report all
+                        known defects of equipment on a suitable form furnished by the
+                        Employer.
                     </p>
 
-                    <p className="three-supporting">
-                        or at the end of their shifts,
-                    </p>
-
-                    <p className="three-emphasis">
-                        report all known defects of equipment
-                    </p>
-
-                    <p className="three-supporting">
-                        on a suitable form furnished by the Employer.
-                    </p>
-
-                    <div className="three-quote-mark three-quote-mark-bottom">
-                        ”
-                    </div>
+                    <div className="three-quote-mark three-quote-mark-bottom">”</div>
                 </section>
 
                 <section className="three-action-section">
@@ -44,10 +32,7 @@ export default function Three() {
                     </div>
 
                     <p className="three-action">
-                        If you are working with equipment that is defective,
-                        stop using the equipment and talk to a supervisor
-                        immediately. Report the defect on the form furnished by
-                        the Employer.
+                        Report every known equipment defect. If you reasonably believe the defect makes the equipment unsafe, stop using the equipment and notify a supervisor immediately. Document the unsafe condition on the form on the bulletin board opposite from the bathrooms in the hallway between 4 and 5.
                     </p>
                 </section>
 

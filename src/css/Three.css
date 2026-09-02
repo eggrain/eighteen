@@ -1,7 +1,18 @@
-/* ARTICLE 18 — PAGE THREE */
+/* =========================================================
+   ARTICLE 18 — SECTION 2 DEFECT REPORTING FLYER
+   ========================================================= */
 
 .article-18-three-page {
+    min-height: 100vh;
+    margin: 0;
     padding: 3rem 1rem;
+
+    display: flex;
+    justify-content: center;
+
+    background: #e9e9e9;
+    color: #111111;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .article-18-three {
@@ -13,20 +24,26 @@
     display: flex;
     flex-direction: column;
 
-    background: var(--paper);
-    color: var(--ink);
+    background: #ffffff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.16);
 }
 
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
 .three-header {
-    text-align: center;
-    border-bottom: 4px solid var(--pink);
     padding-bottom: 0.2in;
+
+    text-align: center;
+    border-bottom: 4px solid #570076;
 }
 
 .three-contract-name {
-    margin-bottom: 0.08in;
+    margin-bottom: 0.1in;
 
-    color: var(--pink-dark);
+    color: #570076;
     font-size: 0.9rem;
     font-weight: 800;
     letter-spacing: 0.12em;
@@ -35,74 +52,89 @@
 .three-header h1 {
     margin: 0;
 
-    color: var(--pink-dark);
-    font-size: 3rem;
+    color: #000000;
+    font-size: 4rem;
     font-weight: 900;
-    line-height: 1;
-    letter-spacing: 0.04em;
+    line-height: 0.95;
+    letter-spacing: 0.035em;
 }
 
 .three-section-name {
-    margin-top: 0.1in;
+    margin-top: 0.12in;
 
-    font-size: 1.15rem;
-    font-weight: 700;
+    color: #111111;
+    font-size: 1.2rem;
+    font-weight: 800;
 }
+
+
+/* =========================================================
+   CONTRACT QUOTE
+   ========================================================= */
 
 .three-quote {
     position: relative;
 
-    margin: 0.42in 0 0.32in;
-    padding: 0.42in 0.42in;
+    margin: 0.48in 0 0.38in;
+    padding: 0.42in 0.3in;
 
-    background: #faf5fc;
-    border-left: 8px solid var(--pink-dark);
+    background: #ffffff;
+    border-top: 5px solid #000000;
+    border-bottom: 5px solid #000000;
+}
+
+.three-contract-quote {
+    margin: 0;
+
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.35rem;
+    font-weight: 900;
+    line-height: 1.18;
+    text-align: center;
 }
 
 .three-quote-mark {
     position: absolute;
-    top: -0.08in;
-    left: 0.12in;
+    top: -0.24in;
+    left: 0.14in;
 
-    color: var(--pink-light);
+    display: block;
+    padding: 0 0.08in;
+
+    background: #ffffff;
+    color: #000000;
     font-family: Georgia, "Times New Roman", serif;
-    font-size: 4.5rem;
+    font-size: 4.2rem;
     font-weight: 900;
     line-height: 1;
 }
 
 .three-quote-mark-bottom {
     top: auto;
-    right: 0.12in;
-    bottom: -0.38in;
+    right: 0.14in;
+    bottom: -0.47in;
     left: auto;
 }
 
-.three-contract-quote {
-    position: relative;
-    z-index: 1;
 
-    margin: 0;
-
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: 1.75rem;
-    font-weight: 700;
-    line-height: 1.32;
-    text-align: center;
-}
+/* =========================================================
+   ACTION MESSAGE
+   ========================================================= */
 
 .three-action-section {
-    padding: 0.28in 0.35in;
+    padding: 0.3in 0.38in;
 
-    border: 5px solid var(--pink-dark);
+    background: #ffffff;
+    border: 5px solid #570076;
     text-align: center;
 }
 
 .three-action-label {
-    margin-bottom: 0.12in;
+    margin-bottom: 0.13in;
 
-    color: var(--pink-dark);
-    font-size: 2rem;
+    color: #570076;
+    font-size: 2.15rem;
     font-weight: 900;
     line-height: 1;
     letter-spacing: 0.035em;
@@ -111,10 +143,16 @@
 .three-action {
     margin: 0;
 
-    font-size: 1.25rem;
+    color: #111111;
+    font-size: 1.3rem;
     font-weight: 700;
     line-height: 1.35;
 }
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
 
 .three-footer {
     margin-top: auto;
@@ -122,21 +160,85 @@
 
     display: flex;
     justify-content: space-between;
+    align-items: flex-end;
     gap: 1rem;
 
+    color: #333333;
     border-top: 2px solid #cccccc;
-    font-size: 0.8rem;
+    font-size: 0.82rem;
+}
+
+.three-footer strong {
+    color: #111111;
 }
 
 .three-footer span {
     text-align: right;
 }
 
-@media print {
+
+/* =========================================================
+   SMALL SCREENS
+   ========================================================= */
+
+@media screen and (max-width: 700px) {
     .article-18-three-page {
+        padding: 1rem 0.5rem;
+    }
+
+    .article-18-three {
         min-height: auto;
+        padding: 2rem 1.25rem;
+    }
+
+    .three-header h1 {
+        font-size: 3rem;
+    }
+
+    .three-contract-quote {
+        font-size: 1.75rem;
+    }
+
+    .three-action-label {
+        font-size: 1.7rem;
+    }
+
+    .three-action {
+        font-size: 1.1rem;
+    }
+}
+
+
+/* =========================================================
+   PRINTING — FIT ON ONE LETTER-SIZE PAGE
+   ========================================================= */
+
+@page {
+    size: letter portrait;
+    margin: 0;
+}
+
+@media print {
+    html,
+    body {
+        width: 8.5in;
+        height: 11in;
+        margin: 0;
         padding: 0;
-        background: white;
+
+        background: #ffffff;
+    }
+
+    .article-18-three-page {
+        width: 8.5in;
+        height: 11in;
+        min-height: 0;
+        margin: 0;
+        padding: 0;
+
+        display: block;
+
+        background: #ffffff;
     }
 
     .article-18-three {
@@ -149,6 +251,7 @@
 
         box-shadow: none;
         overflow: hidden;
+
         break-after: page;
         page-break-after: always;
 
