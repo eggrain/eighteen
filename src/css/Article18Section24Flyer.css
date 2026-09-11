@@ -1,0 +1,283 @@
+.egress-flyer {
+  --egress-blue: #073b78;
+  --egress-deep-blue: #032650;
+  --egress-yellow: #ffc72c;
+  --egress-cream: #fffaf0;
+  --egress-ink: #10243e;
+}
+
+.egress-flyer,
+.egress-flyer * {
+  box-sizing: border-box;
+}
+
+.egress-flyer {
+  width: min(8.5in, 100%);
+  height: 11in;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.32in 1fr;
+  overflow: hidden;
+  color: var(--egress-ink);
+  background: var(--egress-cream);
+  font-family: Arial, Helvetica, sans-serif;
+  box-shadow: 0 0.18in 0.55in rgba(4, 27, 56, 0.2);
+}
+
+.egress-flyer__rail {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.45in 0.18in 0.42in;
+  overflow: hidden;
+  color: white;
+  background: var(--egress-blue);
+}
+
+.egress-flyer__rail::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 1.58in;
+  left: 0;
+  height: 2.25in;
+  background: repeating-linear-gradient(
+    -45deg,
+    var(--egress-yellow) 0,
+    var(--egress-yellow) 0.23in,
+    var(--egress-deep-blue) 0.23in,
+    var(--egress-deep-blue) 0.46in
+  );
+}
+
+.egress-flyer__rail-label {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font-size: 0.18in;
+  font-weight: 900;
+  letter-spacing: 0.055in;
+}
+
+.egress-flyer__section-number {
+  position: absolute;
+  top: 3.47in;
+  z-index: 1;
+  color: var(--egress-yellow);
+  font-size: 0.78in;
+  font-weight: 950;
+  line-height: 1;
+  transform: rotate(-90deg);
+}
+
+.egress-flyer__rail-reference {
+  margin-top: auto;
+  text-align: center;
+  font-size: 0.17in;
+  font-weight: 900;
+  line-height: 1.25;
+  letter-spacing: 0.012in;
+}
+
+.egress-flyer__rail-reference span {
+  display: block;
+  color: var(--egress-yellow);
+}
+
+.egress-flyer__content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding: 0.66in 0.63in 0.44in;
+}
+
+.egress-flyer__header {
+  position: relative;
+  z-index: 1;
+}
+
+.egress-flyer__eyebrow {
+  display: inline-block;
+  margin: 0 0 0.14in;
+  padding: 0.08in 0.14in;
+  color: var(--egress-deep-blue);
+  background: var(--egress-yellow);
+  font-size: 0.15in;
+  font-weight: 900;
+  letter-spacing: 0.025in;
+}
+
+.egress-flyer h1 {
+  margin: 0;
+  color: var(--egress-blue);
+  font-size: 0.76in;
+  font-weight: 950;
+  line-height: 0.88;
+  letter-spacing: -0.035in;
+}
+
+.egress-flyer h1 span {
+  display: block;
+  color: var(--egress-deep-blue);
+  font-size: 1.14in;
+  letter-spacing: -0.055in;
+}
+
+.egress-flyer__route {
+  position: absolute;
+  top: 0.72in;
+  right: 0;
+  display: grid;
+  gap: 0.1in;
+}
+
+.egress-flyer__route span {
+  width: 1.55in;
+  height: 0.22in;
+  background: var(--egress-yellow);
+  clip-path: polygon(0 0, 82% 0, 100% 50%, 82% 100%, 0 100%, 18% 50%);
+}
+
+.egress-flyer__route span:nth-child(2) {
+  transform: translateX(-0.28in);
+}
+
+.egress-flyer__route span:nth-child(3) {
+  transform: translateX(-0.56in);
+}
+
+.egress-flyer__route span:nth-child(4) {
+  transform: translateX(-0.84in);
+}
+
+.egress-flyer__quote-card {
+  position: relative;
+  margin-top: 0.48in;
+  padding: 0.52in 0.44in 0.42in;
+  border: 0.07in solid var(--egress-blue);
+  border-radius: 0.05in;
+  background: white;
+  box-shadow: 0.13in 0.13in 0 var(--egress-yellow);
+}
+
+.egress-flyer__contract-tag {
+  position: absolute;
+  top: -0.18in;
+  left: 0.36in;
+  padding: 0.08in 0.18in;
+  color: white;
+  background: var(--egress-blue);
+  font-size: 0.15in;
+  font-weight: 900;
+  letter-spacing: 0.024in;
+}
+
+.egress-flyer blockquote {
+  margin: 0;
+  color: var(--egress-ink);
+  font-size: 0.285in;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.egress-flyer blockquote strong {
+  color: var(--egress-blue);
+  font-weight: 950;
+}
+
+.egress-flyer__message {
+  display: grid;
+  grid-template-columns: 0.88in 1fr;
+  align-items: stretch;
+  margin-top: 0.5in;
+  color: white;
+  background: var(--egress-blue);
+}
+
+.egress-flyer__message-icon {
+  position: relative;
+  display: grid;
+  place-items: center;
+  background: var(--egress-yellow);
+}
+
+.egress-flyer__message-icon span {
+  width: 0.38in;
+  height: 0.38in;
+  border-top: 0.1in solid var(--egress-deep-blue);
+  border-right: 0.1in solid var(--egress-deep-blue);
+  transform: rotate(45deg) translate(-0.04in, 0.04in);
+}
+
+.egress-flyer__message p {
+  margin: 0;
+  padding: 0.25in 0.28in 0.23in;
+  font-size: 0.22in;
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: 0.01in;
+}
+
+.egress-flyer__message strong {
+  display: block;
+  margin-top: 0.06in;
+  color: var(--egress-yellow);
+  font-size: 0.36in;
+  font-weight: 950;
+  letter-spacing: -0.008in;
+}
+
+.egress-flyer__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: auto;
+  padding-top: 0.22in;
+  border-top: 0.04in solid var(--egress-yellow);
+  color: var(--egress-blue);
+  font-size: 0.135in;
+  font-weight: 900;
+  letter-spacing: 0.016in;
+}
+
+.egress-flyer__footer span:last-child {
+  color: var(--egress-yellow);
+  font-size: 0.36in;
+  line-height: 0.5;
+}
+
+@media (max-width: 8.5in) {
+  .egress-flyer {
+    height: auto;
+    min-height: 100vh;
+    aspect-ratio: 8.5 / 11;
+  }
+}
+
+@media print {
+  @page {
+    size: letter portrait;
+    margin: 0;
+  }
+
+  html,
+  body {
+    width: 8.5in;
+    height: 11in;
+    margin: 0;
+    background: white;
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+
+  .egress-flyer {
+    width: 8.5in;
+    height: 11in;
+    min-height: 0;
+    margin: 0;
+    box-shadow: none;
+    break-after: avoid;
+    break-inside: avoid;
+  }
+}
