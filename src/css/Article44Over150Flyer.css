@@ -1,0 +1,288 @@
+.over150-flyer {
+  --heavy-blue: #063a78;
+  --heavy-deep: #021f43;
+  --heavy-yellow: #ffc72c;
+  --heavy-paper: #fffdf5;
+  --heavy-ink: #071c35;
+}
+
+.over150-flyer,
+.over150-flyer * {
+  box-sizing: border-box;
+}
+
+.over150-flyer {
+  position: relative;
+  width: min(8.5in, 100%);
+  height: 11in;
+  margin: 0 auto;
+  overflow: hidden;
+  color: var(--heavy-ink);
+  background:
+    radial-gradient(circle at 82% 18%, rgba(255, 199, 44, 0.23) 0 1.55in, transparent 1.56in),
+    linear-gradient(112deg, transparent 0 68%, rgba(6, 58, 120, 0.055) 68% 69%, transparent 69% 100%),
+    var(--heavy-paper);
+  font-family: Arial, Helvetica, sans-serif;
+  box-shadow: 0 0.2in 0.5in rgba(1, 25, 54, 0.22);
+}
+
+.over150-flyer__hazard-stripe {
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 0.28in;
+  background: repeating-linear-gradient(
+    125deg,
+    var(--heavy-yellow) 0,
+    var(--heavy-yellow) 0.32in,
+    var(--heavy-blue) 0.32in,
+    var(--heavy-blue) 0.64in
+  );
+}
+
+.over150-flyer__hazard-stripe--bottom {
+  top: auto;
+  bottom: 0;
+  transform: rotate(180deg);
+}
+
+.over150-flyer__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 1.25in;
+  margin: 0.28in 0.55in 0;
+  border-bottom: 0.035in solid var(--heavy-blue);
+}
+
+.over150-flyer__contract-mark {
+  display: flex;
+  flex-direction: column;
+  color: var(--heavy-blue);
+  font-size: 0.13in;
+  font-weight: 900;
+  line-height: 1.05;
+  letter-spacing: 0.032in;
+}
+
+.over150-flyer__contract-mark strong {
+  color: var(--heavy-deep);
+  font-size: 0.29in;
+  letter-spacing: -0.008in;
+}
+
+.over150-flyer__reference {
+  padding: 0.11in 0.16in;
+  color: white;
+  background: var(--heavy-blue);
+  font-size: 0.145in;
+  font-weight: 900;
+  letter-spacing: 0.018in;
+}
+
+.over150-flyer__reference span {
+  padding: 0 0.06in;
+  color: var(--heavy-yellow);
+}
+
+.over150-flyer__hero {
+  position: relative;
+  height: 4.4in;
+  padding: 0.46in 0.56in 0;
+}
+
+.over150-flyer__over {
+  position: relative;
+  z-index: 2;
+  width: fit-content;
+  margin: 0;
+  padding: 0.05in 0.17in 0.04in;
+  color: var(--heavy-deep);
+  background: var(--heavy-yellow);
+  font-size: 0.28in;
+  font-weight: 950;
+  letter-spacing: 0.075in;
+  transform: rotate(-3deg);
+}
+
+.over150-flyer__weight {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: flex-end;
+  margin-top: -0.18in;
+  color: var(--heavy-blue);
+  line-height: 0.8;
+  transform: rotate(-3deg);
+  transform-origin: left center;
+}
+
+.over150-flyer__number {
+  font-size: 3.25in;
+  font-weight: 1000;
+  letter-spacing: -0.21in;
+  text-shadow: 0.09in 0.09in 0 var(--heavy-yellow);
+}
+
+.over150-flyer__unit {
+  margin: 0 0 0.26in 0.2in;
+  padding-bottom: 0.03in;
+  border-bottom: 0.13in solid var(--heavy-yellow);
+  color: var(--heavy-deep);
+  font-size: 0.7in;
+  font-weight: 1000;
+  letter-spacing: -0.04in;
+}
+
+.over150-flyer__slash {
+  position: absolute;
+  z-index: 3;
+  top: 0.55in;
+  left: 3.95in;
+  width: 0.3in;
+  height: 4in;
+  background: var(--heavy-yellow);
+  box-shadow: 0 0 0 0.07in var(--heavy-paper);
+  transform: rotate(46deg);
+  transform-origin: center;
+}
+
+.over150-flyer__verdict {
+  position: relative;
+  margin: -0.22in 0.55in 0;
+  padding: 0.3in 0.38in 0.29in 1.48in;
+  color: white;
+  background: var(--heavy-blue);
+  clip-path: polygon(0.65in 0, 100% 0, calc(100% - 0.32in) 100%, 0 100%);
+}
+
+.over150-flyer__verdict::before {
+  content: "NO";
+  position: absolute;
+  top: 50%;
+  left: 0.23in;
+  color: var(--heavy-yellow);
+  font-size: 0.88in;
+  font-weight: 1000;
+  line-height: 1;
+  transform: translateY(-50%) rotate(-90deg);
+}
+
+.over150-flyer__verdict-small {
+  display: block;
+  margin-bottom: 0.05in;
+  color: var(--heavy-yellow);
+  font-size: 0.17in;
+  font-weight: 900;
+  letter-spacing: 0.055in;
+}
+
+.over150-flyer__verdict strong {
+  display: block;
+  font-size: 0.54in;
+  font-weight: 1000;
+  line-height: 0.88;
+  letter-spacing: -0.022in;
+}
+
+.over150-flyer__quote-panel {
+  position: relative;
+  margin: 0.55in 0.55in 0;
+  padding: 0.42in 0.42in 0.34in;
+  border: 0.055in solid var(--heavy-blue);
+  background: white;
+}
+
+.over150-flyer__quote-panel::after {
+  content: "44.3";
+  position: absolute;
+  right: 0.25in;
+  bottom: -0.29in;
+  padding: 0.07in 0.12in;
+  color: var(--heavy-deep);
+  background: var(--heavy-yellow);
+  font-size: 0.17in;
+  font-weight: 1000;
+  letter-spacing: 0.02in;
+}
+
+.over150-flyer__quote-label {
+  position: absolute;
+  top: -0.17in;
+  left: 0.3in;
+  padding: 0.07in 0.13in;
+  color: var(--heavy-yellow);
+  background: var(--heavy-deep);
+  font-size: 0.12in;
+  font-weight: 900;
+  letter-spacing: 0.02in;
+}
+
+.over150-flyer blockquote {
+  margin: 0;
+  color: var(--heavy-blue);
+  font-size: 0.36in;
+  font-weight: 950;
+  line-height: 1.12;
+  letter-spacing: -0.012in;
+}
+
+.over150-flyer__footer {
+  display: grid;
+  grid-template-columns: 1.25fr 1fr;
+  gap: 0.35in;
+  align-items: end;
+  margin: 0.52in 0.55in 0;
+  color: var(--heavy-blue);
+}
+
+.over150-flyer__footer span {
+  font-size: 0.125in;
+  font-weight: 900;
+  line-height: 1.25;
+  letter-spacing: 0.025in;
+}
+
+.over150-flyer__footer strong {
+  color: var(--heavy-deep);
+  font-size: 0.17in;
+  font-weight: 950;
+  line-height: 1.12;
+  text-align: right;
+}
+
+@media (max-width: 8.5in) {
+  .over150-flyer {
+    height: auto;
+    min-height: 100vh;
+    aspect-ratio: 8.5 / 11;
+  }
+}
+
+@media print {
+  @page {
+    size: letter portrait;
+    margin: 0;
+  }
+
+  html,
+  body {
+    width: 8.5in;
+    height: 11in;
+    margin: 0;
+    background: white;
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+
+  .over150-flyer {
+    width: 8.5in;
+    height: 11in;
+    min-height: 0;
+    margin: 0;
+    box-shadow: none;
+    break-inside: avoid;
+  }
+}

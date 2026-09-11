@@ -1,0 +1,332 @@
+.outservice-flyer {
+  --service-blue: #073b78;
+  --service-deep: #032650;
+  --service-yellow: #ffc72c;
+  --service-paper: #fffaf0;
+  --service-ink: #10243e;
+}
+
+.outservice-flyer,
+.outservice-flyer * {
+  box-sizing: border-box;
+}
+
+.outservice-flyer {
+  position: relative;
+  width: min(8.5in, 100%);
+  height: 11in;
+  margin: 0 auto;
+  padding: 0.5in 0.58in 0.44in;
+  overflow: hidden;
+  color: var(--service-ink);
+  background:
+    linear-gradient(90deg, transparent 0 94%, rgba(7, 59, 120, 0.06) 94% 95%, transparent 95%),
+    var(--service-paper);
+  font-family: Arial, Helvetica, sans-serif;
+  box-shadow: 0 0.18in 0.55in rgba(3, 38, 80, 0.2);
+}
+
+.outservice-flyer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 0.2in;
+  background: repeating-linear-gradient(
+    120deg,
+    var(--service-yellow) 0,
+    var(--service-yellow) 0.28in,
+    var(--service-blue) 0.28in,
+    var(--service-blue) 0.56in
+  );
+}
+
+.outservice-flyer__masthead {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding-bottom: 0.2in;
+  border-bottom: 0.035in solid var(--service-blue);
+}
+
+.outservice-flyer__agreement {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 0.1in;
+  max-width: 3.3in;
+  color: var(--service-blue);
+}
+
+.outservice-flyer__agreement > span {
+  padding: 0.06in 0.08in;
+  color: var(--service-yellow);
+  background: var(--service-blue);
+  font-size: 0.2in;
+  font-weight: 1000;
+  line-height: 1;
+}
+
+.outservice-flyer__agreement strong {
+  font-size: 0.14in;
+  font-weight: 950;
+  line-height: 1.08;
+  letter-spacing: 0.018in;
+}
+
+.outservice-flyer__reference {
+  color: var(--service-deep);
+  font-size: 0.14in;
+  font-weight: 950;
+  letter-spacing: 0.015in;
+}
+
+.outservice-flyer__reference span {
+  padding: 0 0.07in;
+  color: var(--service-yellow);
+  font-size: 0.22in;
+}
+
+.outservice-flyer__hero {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1.22fr 0.78fr;
+  align-items: center;
+  min-height: 2.7in;
+  padding: 0.36in 0 0.24in;
+}
+
+.outservice-flyer__hero-copy > span {
+  display: inline-block;
+  margin-bottom: 0.08in;
+  padding: 0.065in 0.12in;
+  color: var(--service-deep);
+  background: var(--service-yellow);
+  font-size: 0.15in;
+  font-weight: 950;
+  letter-spacing: 0.04in;
+}
+
+.outservice-flyer__hero-copy h1 {
+  margin: 0;
+  color: var(--service-blue);
+  font-size: 0.83in;
+  font-weight: 1000;
+  line-height: 0.82;
+  letter-spacing: -0.04in;
+}
+
+.outservice-flyer__tag {
+  position: relative;
+  justify-self: end;
+  width: 2.37in;
+  height: 2.2in;
+  padding: 0.52in 0.18in 0.18in;
+  overflow: hidden;
+  color: var(--service-yellow);
+  background: var(--service-blue);
+  text-align: center;
+  clip-path: polygon(0.4in 0, calc(100% - 0.4in) 0, 100% 0.4in, 100% 100%, 0 100%, 0 0.4in);
+  transform: rotate(5deg);
+  box-shadow: 0.1in 0.1in 0 var(--service-yellow);
+}
+
+.outservice-flyer__tag::after {
+  content: "";
+  position: absolute;
+  right: -0.35in;
+  bottom: -0.35in;
+  width: 1in;
+  height: 1in;
+  border: 0.14in solid rgba(255, 199, 44, 0.28);
+  border-radius: 50%;
+}
+
+.outservice-flyer__tag-hole {
+  position: absolute;
+  top: 0.12in;
+  left: 50%;
+  width: 0.22in;
+  height: 0.22in;
+  border: 0.045in solid var(--service-yellow);
+  border-radius: 50%;
+  background: var(--service-paper);
+  transform: translateX(-50%);
+}
+
+.outservice-flyer__tag > span,
+.outservice-flyer__tag > strong,
+.outservice-flyer__tag > small {
+  display: block;
+  position: relative;
+  z-index: 1;
+}
+
+.outservice-flyer__tag > span {
+  font-size: 0.21in;
+  font-weight: 950;
+  letter-spacing: 0.07in;
+}
+
+.outservice-flyer__tag > strong {
+  margin-top: 0.02in;
+  color: white;
+  font-size: 0.48in;
+  font-weight: 1000;
+  line-height: 0.92;
+  letter-spacing: -0.02in;
+}
+
+.outservice-flyer__tag > small {
+  margin-top: 0.11in;
+  padding-top: 0.08in;
+  border-top: 0.025in solid var(--service-yellow);
+  font-size: 0.13in;
+  font-weight: 900;
+  letter-spacing: 0.045in;
+}
+
+.outservice-flyer__contract {
+  position: relative;
+  padding: 0.42in 0.4in 0.32in;
+  border: 0.055in solid var(--service-blue);
+  background: white;
+  box-shadow: 0.11in 0.11in 0 var(--service-yellow);
+}
+
+.outservice-flyer__contract-label {
+  position: absolute;
+  top: -0.16in;
+  left: 0.31in;
+  padding: 0.07in 0.14in;
+  color: var(--service-yellow);
+  background: var(--service-deep);
+  font-size: 0.125in;
+  font-weight: 950;
+  letter-spacing: 0.025in;
+}
+
+.outservice-flyer blockquote {
+  margin: 0;
+  color: var(--service-ink);
+  font-size: 0.255in;
+  font-weight: 750;
+  line-height: 1.34;
+}
+
+.outservice-flyer__actions {
+  display: grid;
+  gap: 0.16in;
+  margin-top: 0.5in;
+}
+
+.outservice-flyer__actions article {
+  display: grid;
+  grid-template-columns: 0.65in 1fr;
+  align-items: center;
+  min-height: 0.75in;
+  border-left: 0.09in solid var(--service-yellow);
+  background: rgba(7, 59, 120, 0.065);
+}
+
+.outservice-flyer__step {
+  align-self: stretch;
+  display: grid;
+  place-items: center;
+  color: var(--service-yellow);
+  background: var(--service-blue);
+  font-size: 0.25in;
+  font-weight: 1000;
+}
+
+.outservice-flyer__actions article > div {
+  padding: 0.14in 0.2in 0.13in;
+}
+
+.outservice-flyer__actions h2 {
+  margin: 0 0 0.025in;
+  color: var(--service-blue);
+  font-size: 0.19in;
+  font-weight: 1000;
+  line-height: 1;
+  letter-spacing: 0.012in;
+}
+
+.outservice-flyer__actions p {
+  margin: 0;
+  color: var(--service-ink);
+  font-size: 0.16in;
+  font-weight: 650;
+  line-height: 1.23;
+}
+
+.outservice-flyer__actions p strong {
+  color: var(--service-blue);
+  font-weight: 950;
+}
+
+.outservice-flyer__actions .outservice-flyer__location {
+  border-left-color: var(--service-blue);
+  background: var(--service-yellow);
+}
+
+.outservice-flyer__location .outservice-flyer__step {
+  color: var(--service-deep);
+  background: white;
+}
+
+.outservice-flyer__footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.18in;
+  margin-top: 0.42in;
+  padding: 0.17in;
+  color: white;
+  background: var(--service-deep);
+  font-size: 0.15in;
+  font-weight: 950;
+  letter-spacing: 0.025in;
+}
+
+.outservice-flyer__footer i {
+  color: var(--service-yellow);
+  font-size: 0.24in;
+  font-style: normal;
+  line-height: 0.7;
+}
+
+@media (max-width: 8.5in) {
+  .outservice-flyer {
+    height: auto;
+    min-height: 100vh;
+    aspect-ratio: 8.5 / 11;
+  }
+}
+
+@media print {
+  @page {
+    size: letter portrait;
+    margin: 0;
+  }
+
+  html,
+  body {
+    width: 8.5in;
+    height: 11in;
+    margin: 0;
+    background: white;
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+
+  .outservice-flyer {
+    width: 8.5in;
+    height: 11in;
+    min-height: 0;
+    margin: 0;
+    box-shadow: none;
+    break-inside: avoid;
+  }
+}
