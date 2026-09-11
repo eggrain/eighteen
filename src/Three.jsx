@@ -1,3 +1,5 @@
+import "./css/Three.css";
+
 export default function Three() {
     return (
         <main className="article-18-page article-18-three-page">
