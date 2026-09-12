@@ -1,0 +1,231 @@
+.defect-flyer {
+  --ink: #17243a;
+  --blue: #174a7e;
+  --gold: #d99a22;
+  --paper: #f7f4ed;
+  --muted: #68717d;
+}
+
+.defect-flyer,
+.defect-flyer * {
+  box-sizing: border-box;
+}
+
+.defect-flyer {
+  width: min(8.5in, 100%);
+  height: 11in;
+  margin: 0 auto;
+  padding: 0.5in 0.62in 0.45in;
+  overflow: hidden;
+  color: var(--ink);
+  background: var(--paper);
+  font-family: Arial, Helvetica, sans-serif;
+  box-shadow: 0 0.16in 0.5in rgba(23, 36, 58, 0.16);
+}
+
+.defect-flyer__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 0.16in;
+  border-bottom: 1px solid rgba(23, 36, 58, 0.42);
+}
+
+.defect-flyer__agreement,
+.defect-flyer__reference {
+  margin: 0;
+}
+
+.defect-flyer__agreement {
+  display: flex;
+  align-items: center;
+  gap: 0.1in;
+  font-size: 0.125in;
+  font-weight: 700;
+  letter-spacing: 0.018in;
+  text-transform: uppercase;
+}
+
+.defect-flyer__agreement strong {
+  color: var(--blue);
+  font-size: 0.2in;
+  font-weight: 900;
+  letter-spacing: -0.012in;
+}
+
+.defect-flyer__reference {
+  color: var(--muted);
+  font-size: 0.115in;
+  font-weight: 800;
+  letter-spacing: 0.018in;
+  text-transform: uppercase;
+}
+
+.defect-flyer__reference span {
+  margin: 0 0.07in;
+  color: var(--gold);
+}
+
+.defect-flyer__hero {
+  padding: 0.48in 0 0.42in;
+}
+
+.defect-flyer__eyebrow,
+.defect-flyer__subject {
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.defect-flyer__eyebrow {
+  margin-bottom: 0.1in;
+  color: var(--gold);
+  font-size: 0.15in;
+  font-weight: 900;
+  letter-spacing: 0.045in;
+}
+
+.defect-flyer__hero h1 {
+  margin: 0;
+  max-width: 7.2in;
+  color: var(--blue);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 0.77in;
+  font-weight: 700;
+  line-height: 0.94;
+  letter-spacing: -0.038in;
+}
+
+.defect-flyer__hero h1 span {
+  color: var(--gold);
+  font-style: italic;
+  font-weight: 400;
+}
+
+.defect-flyer__subject {
+  margin-top: 0.18in;
+  color: var(--muted);
+  font-size: 0.14in;
+  font-weight: 800;
+  letter-spacing: 0.055in;
+}
+
+.defect-flyer__contract {
+  display: grid;
+  grid-template-columns: 1.25in 1fr;
+  gap: 0.28in;
+  padding: 0.28in 0;
+  border-top: 0.035in solid var(--ink);
+  border-bottom: 1px solid rgba(23, 36, 58, 0.42);
+}
+
+.defect-flyer__label {
+  margin: 0;
+  padding-top: 0.045in;
+  color: var(--blue);
+  font-size: 0.115in;
+  font-weight: 900;
+  letter-spacing: 0.025in;
+  line-height: 1.25;
+  text-transform: uppercase;
+}
+
+.defect-flyer blockquote {
+  margin: 0;
+  color: var(--ink);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 0.245in;
+  font-weight: 600;
+  line-height: 1.38;
+}
+
+.defect-flyer__steps {
+  margin-top: 0.22in;
+}
+
+.defect-flyer__step {
+  display: grid;
+  grid-template-columns: 0.58in 1fr;
+  gap: 0.2in;
+  padding: 0.22in 0;
+  border-bottom: 1px solid rgba(23, 36, 58, 0.22);
+}
+
+.defect-flyer__number {
+  color: var(--gold);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 0.25in;
+  font-style: italic;
+  line-height: 1;
+}
+
+.defect-flyer__step h2 {
+  margin: 0 0 0.055in;
+  color: var(--blue);
+  font-size: 0.165in;
+  font-weight: 900;
+  letter-spacing: 0.02in;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.defect-flyer__step p {
+  margin: 0;
+  max-width: 6.15in;
+  font-size: 0.153in;
+  font-weight: 600;
+  line-height: 1.32;
+}
+
+.defect-flyer__footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.19in;
+  margin-top: 0.32in;
+  color: var(--ink);
+  font-size: 0.14in;
+  font-weight: 900;
+  letter-spacing: 0.045in;
+  text-transform: uppercase;
+}
+
+.defect-flyer__footer i {
+  display: block;
+  width: 0.52in;
+  height: 1px;
+  background: var(--gold);
+}
+
+@media (max-width: 8.5in) {
+  .defect-flyer {
+    height: auto;
+    min-height: 100vh;
+    aspect-ratio: 8.5 / 11;
+  }
+}
+
+@media print {
+  @page {
+    size: letter portrait;
+    margin: 0;
+  }
+
+  html,
+  body {
+    width: 8.5in;
+    height: 11in;
+    margin: 0;
+    background: white;
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+
+  .defect-flyer {
+    width: 8.5in;
+    height: 11in;
+    min-height: 0;
+    margin: 0;
+    box-shadow: none;
+    break-inside: avoid;
+  }
+}
