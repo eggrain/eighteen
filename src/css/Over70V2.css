@@ -1,0 +1,183 @@
+.over70v2-page,
+.over70v2-page * {
+  box-sizing: border-box;
+}
+
+.over70v2-page {
+  --blue: #153b64;
+  --yellow: #f2c441;
+  width: 8.5in;
+  height: 11in;
+  margin: 0 auto;
+  padding: 0.42in;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  color: var(--blue);
+  font-family: 'Arial Black', 'Franklin Gothic Heavy', Arial, sans-serif;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+.over70v2-topline {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.2in;
+  padding: 0 0 0.13in;
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 0.11em;
+  white-space: nowrap;
+}
+
+.over70v2-hero {
+  position: relative;
+  min-height: 5.17in;
+  padding: 0.25in 0.4in 0.29in;
+  overflow: hidden;
+  background: var(--blue);
+  color: #fff;
+}
+
+.over70v2-rule {
+  width: 0.88in;
+  height: 0.09in;
+  background: var(--yellow);
+}
+
+.over70v2-section {
+  margin: 0.22in 0 0.14in;
+  font-size: 14px;
+  font-weight: 900;
+  letter-spacing: 0.18em;
+}
+
+.over70v2-hero h1 {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 73px;
+  font-weight: 900;
+  line-height: 0.97;
+  letter-spacing: -0.055em;
+}
+
+.over70v2-hero h1 strong {
+  color: var(--yellow);
+  font-size: 207px;
+  font-weight: 900;
+  line-height: 0.87;
+  letter-spacing: -0.075em;
+}
+
+.over70v2-question {
+  color: var(--yellow);
+}
+
+.over70v2-hero-foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0.28in;
+  padding-top: 0.18in;
+  border-top: 2px solid var(--yellow);
+  color: var(--yellow);
+  font-size: 20px;
+  font-weight: 900;
+  letter-spacing: 0.045em;
+}
+
+.over70v2-square {
+  display: block;
+  width: 0.19in;
+  height: 0.19in;
+  background: var(--yellow);
+}
+
+.over70v2-contract {
+  padding: 0.38in 0.17in 0.23in;
+}
+
+.over70v2-label {
+  display: flex;
+  align-items: center;
+  gap: 0.12in;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.14em;
+}
+
+.over70v2-label-square {
+  width: 0.16in;
+  height: 0.16in;
+  background: var(--yellow);
+  border: 2px solid var(--blue);
+}
+
+.over70v2-contract blockquote {
+  margin: 0.21in 0 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: -0.025em;
+}
+
+.over70v2-footer {
+  margin-top: auto;
+  padding: 0 0.17in;
+}
+
+.over70v2-footer-rule {
+  height: 0.07in;
+  background: var(--yellow);
+}
+
+.over70v2-footer strong {
+  display: block;
+  margin-top: 0.18in;
+  font-size: 24px;
+  font-weight: 900;
+  letter-spacing: -0.015em;
+}
+
+.over70v2-footer p {
+  margin: 0.06in 0 0.28in;
+  max-width: 6.7in;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 1.35;
+}
+
+.over70v2-bottomline {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.15in;
+  padding-top: 0.13in;
+  border-top: 2px solid var(--blue);
+  font-size: 9px;
+  font-weight: 900;
+  letter-spacing: 0.11em;
+}
+
+@page {
+  size: letter;
+  margin: 0;
+}
+
+@media print {
+  html,
+  body,
+  #root {
+    width: 8.5in;
+    margin: 0;
+    padding: 0;
+  }
+
+  .over70v2-page {
+    margin: 0;
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+}

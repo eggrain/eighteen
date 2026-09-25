@@ -1,0 +1,229 @@
+.over70v3-page,
+.over70v3-page * {
+  box-sizing: border-box;
+}
+
+.over70v3-page {
+  --blue: #173e67;
+  --yellow: #efc33e;
+  width: 8.5in;
+  height: 11in;
+  margin: 0 auto;
+  padding: 0.42in 0.47in 0.38in;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  color: var(--blue);
+  font-family: 'Arial Black', 'Franklin Gothic Heavy', Arial, sans-serif;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+.over70v3-topbar {
+  height: 0.1in;
+  flex: 0 0 auto;
+  background: linear-gradient(to right, var(--blue) 0 79%, var(--yellow) 79% 100%);
+}
+
+.over70v3-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.12in;
+  padding: 0.17in 0 0.2in;
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  white-space: nowrap;
+}
+
+.over70v3-header b {
+  color: #ad830e;
+  padding: 0 0.1em;
+}
+
+.over70v3-intro {
+  display: grid;
+  grid-template-columns: 1fr 1.7in;
+  gap: 0.3in;
+  align-items: end;
+  padding: 0.32in 0 0.31in;
+}
+
+.over70v3-eyebrow {
+  margin: 0 0 0.18in;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.15em;
+}
+
+.over70v3-intro h1 {
+  margin: 0;
+  font-size: 54px;
+  font-weight: 900;
+  line-height: 0.98;
+  letter-spacing: -0.065em;
+}
+
+.over70v3-intro h1 span:not(.over70v3-mark) {
+  color: #bd8e0c;
+  font-size: 99px;
+  letter-spacing: -0.085em;
+  line-height: 0.93;
+}
+
+.over70v3-intro h1 .over70v3-mark {
+  color: #bd8e0c;
+}
+
+.over70v3-aside {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 0 0 0.12in 0.22in;
+  border-left: 5px solid var(--yellow);
+}
+
+.over70v3-aside-rule {
+  width: 0.38in;
+  height: 0.06in;
+  background: var(--blue);
+}
+
+.over70v3-aside p {
+  margin: 0.18in 0 0;
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 1.13;
+  letter-spacing: -0.025em;
+}
+
+.over70v3-aside strong {
+  color: #ad8005;
+}
+
+.over70v3-divider {
+  position: relative;
+  height: 0.07in;
+  background: var(--blue);
+}
+
+.over70v3-divider span {
+  position: absolute;
+  right: 0;
+  width: 0.9in;
+  height: 100%;
+  background: var(--yellow);
+}
+
+.over70v3-quote-section {
+  position: relative;
+  margin-top: 0.46in;
+  padding: 0.29in 0.31in 0.29in 0.34in;
+  border: 3px solid var(--blue);
+  border-left: 0.1in solid var(--yellow);
+}
+
+.over70v3-quote-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 0.39in;
+}
+
+.over70v3-label {
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 0.16em;
+}
+
+.over70v3-quote-mark {
+  margin-top: -0.23in;
+  color: #bb8e0e;
+  font-family: Georgia, serif;
+  font-size: 94px;
+  line-height: 1;
+}
+
+.over70v3-quote-section blockquote {
+  margin: 0;
+  padding-right: 0.08in;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 29px;
+  font-weight: 800;
+  line-height: 1.24;
+  letter-spacing: -0.032em;
+}
+
+.over70v3-quote-end {
+  width: 0.57in;
+  height: 0.06in;
+  margin-top: 0.3in;
+  background: var(--yellow);
+}
+
+.over70v3-footer {
+  margin-top: auto;
+  padding-top: 0.25in;
+}
+
+.over70v3-action {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.12in;
+  min-height: 0.58in;
+  padding: 0.1in 0.17in;
+  background: var(--blue);
+  color: white;
+  font-size: 24px;
+  font-weight: 900;
+  letter-spacing: -0.015em;
+}
+
+.over70v3-action-square {
+  width: 0.18in;
+  height: 0.18in;
+  flex: 0 0 auto;
+  background: var(--yellow);
+}
+
+.over70v3-footer p {
+  margin: 0.17in 0 0.33in;
+  max-width: 6.8in;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 1.35;
+}
+
+.over70v3-bottomline {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.12in;
+  padding-top: 0.13in;
+  border-top: 2px solid var(--blue);
+  font-size: 9px;
+  font-weight: 900;
+  letter-spacing: 0.105em;
+}
+
+@page {
+  size: letter;
+  margin: 0;
+}
+
+@media print {
+  html,
+  body,
+  #root {
+    width: 8.5in;
+    margin: 0;
+    padding: 0;
+  }
+
+  .over70v3-page {
+    margin: 0;
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+}

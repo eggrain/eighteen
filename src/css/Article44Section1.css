@@ -1,0 +1,162 @@
+.a44-page,
+.a44-page * {
+  box-sizing: border-box;
+}
+
+.a44-page {
+  --ink: #10243b;
+  --accent: #e8b73f;
+  width: 8.5in;
+  min-height: 11in;
+  margin: 0 auto;
+  padding: 0.48in;
+  background: #fff;
+  color: var(--ink);
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+.a44-frame {
+  min-height: 10.04in;
+  border: 3px solid currentColor;
+  padding: 0.38in 0.44in 0.29in;
+  display: flex;
+  flex-direction: column;
+}
+
+.a44-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0.15in;
+  padding-bottom: 0.17in;
+  border-bottom: 2px solid currentColor;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.105em;
+}
+
+.a44-reference {
+  white-space: nowrap;
+}
+
+.a44-reference span {
+  padding: 0 0.25em;
+}
+
+.a44-intro {
+  padding: 0.66in 0 0.47in;
+  text-align: center;
+}
+
+.a44-kicker {
+  margin: 0 0 0.18in;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+}
+
+.a44-intro h1 {
+  margin: 0;
+  font-family: Impact, 'Arial Narrow', 'Franklin Gothic Heavy', sans-serif;
+  font-stretch: condensed;
+  font-size: 63px;
+  line-height: 0.99;
+  letter-spacing: 0.012em;
+  text-transform: uppercase;
+}
+
+.a44-intro h1 span {
+  display: inline-block;
+  border-bottom: 0.13em solid var(--accent);
+  line-height: 0.8;
+}
+
+.a44-deck {
+  margin: 0.31in 0 0;
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.a44-quote {
+  padding: 0.3in 0.33in 0.35in;
+  border: 2px solid currentColor;
+  border-left: 0.12in solid var(--accent);
+}
+
+.a44-quote-label {
+  margin-bottom: 0.19in;
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 0.17em;
+}
+
+.a44-quote blockquote {
+  margin: 0;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 1.28;
+}
+
+.a44-footer {
+  margin-top: auto;
+  padding-top: 0.44in;
+  text-align: center;
+}
+
+.a44-action {
+  font-family: Impact, 'Arial Narrow', 'Franklin Gothic Heavy', sans-serif;
+  font-size: 42px;
+  letter-spacing: 0.025em;
+}
+
+.a44-footer p {
+  max-width: 5.5in;
+  margin: 0.19in auto 0.38in;
+  font-size: 16px;
+  line-height: 1.35;
+}
+
+.a44-rule {
+  border-top: 2px solid currentColor;
+}
+
+.a44-footer-ref {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.12in;
+  margin-top: 0.15in;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.11em;
+}
+
+@page {
+  size: letter;
+  margin: 0;
+}
+
+@media print {
+  html,
+  body,
+  #root {
+    width: 8.5in;
+    margin: 0;
+    padding: 0;
+  }
+
+  .a44-page {
+    margin: 0;
+    height: 11in;
+    min-height: 0;
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+
+  .a44-frame {
+    height: 100%;
+    min-height: 0;
+  }
+}
