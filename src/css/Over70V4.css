@@ -1,0 +1,292 @@
+.over70v4-page,
+.over70v4-page * {
+  box-sizing: border-box;
+}
+
+.over70v4-page {
+  --blue: #103e71;
+  --yellow: #ffcf31;
+  position: relative;
+  width: 8.5in;
+  height: 11in;
+  margin: 0 auto;
+  padding: 0.35in 0.42in 0.38in;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  color: var(--blue);
+  font-family: 'Arial Black', Impact, 'Franklin Gothic Heavy', Arial, sans-serif;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+.over70v4-corner {
+  position: absolute;
+  right: -0.29in;
+  top: -0.39in;
+  z-index: 0;
+  width: 1.55in;
+  height: 1.55in;
+  transform: rotate(20deg);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 0.11in;
+  background: var(--yellow);
+  color: var(--blue);
+  font-size: 33px;
+  font-weight: 900;
+}
+
+.over70v4-masthead {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 0.66in;
+  padding: 0.06in 0.18in 0.12in 0;
+  border-bottom: 5px solid var(--blue);
+  font-size: 12px;
+  font-weight: 900;
+  line-height: 1.08;
+  letter-spacing: 0.08em;
+}
+
+.over70v4-masthead-right {
+  text-align: right;
+  margin-right: 0.88in;
+}
+
+.over70v4-hero {
+  position: relative;
+  height: 3.23in;
+  padding-top: 0.2in;
+}
+
+.over70v4-hero::before {
+  content: '';
+  position: absolute;
+  z-index: 0;
+  top: 0.76in;
+  left: -0.42in;
+  width: 8.5in;
+  height: 1.47in;
+  transform: skewY(-6deg);
+  background: var(--yellow);
+}
+
+.over70v4-sideword {
+  position: absolute;
+  right: -0.27in;
+  top: 1.34in;
+  transform: rotate(90deg);
+  transform-origin: right center;
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 0.18em;
+}
+
+.over70v4-section {
+  position: relative;
+  margin: 0 0 0.06in;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.17em;
+}
+
+.over70v4-hero h1 {
+  position: relative;
+  z-index: 1;
+  width: 6.6in;
+  margin: 0;
+  font-size: 60px;
+  font-weight: 900;
+  line-height: 0.82;
+  letter-spacing: -0.075em;
+}
+
+.over70v4-hero h1 span {
+  display: block;
+}
+
+.over70v4-over {
+  padding-left: 0.02in;
+}
+
+.over70v4-hero h1 .over70v4-number {
+  position: relative;
+  font-size: 145px;
+  line-height: 0.9;
+  letter-spacing: -0.09em;
+  text-shadow: 4px 4px 0 #fff;
+}
+
+.over70v4-hero h1 .over70v4-burst {
+  display: inline-block;
+  transform: rotate(-16deg) translate(0.08in, -0.21in);
+  color: #fff;
+  font-size: 73px;
+  line-height: 1;
+  text-shadow: 4px 4px 0 var(--blue);
+}
+
+.over70v4-hero h1 .over70v4-pounds {
+  margin-top: -0.03in;
+  font-size: 67px;
+  line-height: 0.95;
+}
+
+.over70v4-hero h1 .over70v4-pounds span {
+  display: inline;
+  color: #b98000;
+}
+
+.over70v4-hero-tag {
+  position: absolute;
+  z-index: 2;
+  right: 0.04in;
+  bottom: 0.04in;
+  width: 3.04in;
+  padding: 0.12in 0.13in;
+  transform: rotate(-4deg);
+  background: var(--blue);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 900;
+  line-height: 1.14;
+  text-align: center;
+}
+
+.over70v4-stripes {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.12in;
+  height: 0.1in;
+  margin: 0.16in 0 0.36in;
+}
+
+.over70v4-stripes span {
+  flex: 1;
+  transform: skewX(-25deg);
+  background: var(--blue);
+}
+
+.over70v4-stripes span:nth-child(even) {
+  background: var(--yellow);
+}
+
+.over70v4-quote {
+  position: relative;
+  padding: 0.25in 0.29in 0.19in;
+  border: 6px solid var(--blue);
+  box-shadow: 0.14in 0.14in 0 var(--yellow);
+}
+
+.over70v4-quote-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.12in;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.15em;
+}
+
+.over70v4-star {
+  color: #b98000;
+  font-size: 34px;
+  line-height: 0.6;
+}
+
+.over70v4-quote blockquote {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 27px;
+  font-weight: 800;
+  line-height: 1.23;
+  letter-spacing: -0.035em;
+}
+
+.over70v4-quote-base {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.23in;
+  padding-top: 0.11in;
+  border-top: 2px solid var(--blue);
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 0.09em;
+}
+
+.over70v4-footer {
+  display: flex;
+  gap: 0.26in;
+  align-items: flex-end;
+  margin-top: auto;
+  padding-top: 0.35in;
+}
+
+.over70v4-footer-callout {
+  flex: 0 0 2.1in;
+  padding: 0.14in 0.17in;
+  background: var(--yellow);
+  color: var(--blue);
+  font-size: 34px;
+  font-weight: 900;
+  line-height: 0.92;
+  letter-spacing: -0.05em;
+}
+
+.over70v4-footer-callout span {
+  color: var(--blue);
+  text-decoration: underline;
+  text-decoration-thickness: 0.06em;
+}
+
+.over70v4-footer-detail {
+  flex: 1;
+  padding-bottom: 0.02in;
+}
+
+.over70v4-footer-detail p {
+  margin: 0 0 0.16in;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.27;
+}
+
+.over70v4-footer-detail div {
+  padding-top: 0.1in;
+  border-top: 3px solid var(--blue);
+  font-size: 9px;
+  font-weight: 900;
+  letter-spacing: 0.045em;
+}
+
+.over70v4-footer-detail div span {
+  color: #a67500;
+}
+
+@page {
+  size: letter;
+  margin: 0;
+}
+
+@media print {
+  html,
+  body,
+  #root {
+    width: 8.5in;
+    margin: 0;
+    padding: 0;
+  }
+
+  .over70v4-page {
+    margin: 0;
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+}

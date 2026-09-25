@@ -8,6 +8,7 @@ import OriginalThree from "./OriginalThree";
 import Article44Section1 from "./Article44Section1";
 import Over70V2 from "./Over70V2";
 import Over70V3 from "./Over70V3";
+import Over70V4 from "./Over70V4";
 
 export default function App() {
     return <>
@@ -22,6 +23,7 @@ export default function App() {
             <Article44Section1 />
             <Over70V2 />
             <Over70V3 />
+            <Over70V4 />
         </div>
     </>;
 }
