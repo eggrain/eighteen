@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=Barlow:wght@400;600;700;800;900&display=swap');
+
+.upsSafetyBoldV3Root {
+  --upsSafetyBoldV3Navy: #102a50;
+  --upsSafetyBoldV3Yellow: #fff4b8;
+  --upsSafetyBoldV3Ink: #14233a;
+  padding: 24px;
+  background: #e6e8ec;
+  color: var(--upsSafetyBoldV3Ink);
+  font-family: Barlow, Arial, sans-serif;
+}
+.upsSafetyBoldV3Root * { box-sizing: border-box; }
+.upsSafetyBoldV3Sheet {
+  width: 8.5in;
+  height: 11in;
+  margin: 0 auto 24px;
+  padding: .45in .55in .38in;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 8px 26px #10243b29;
+}
+.upsSafetyBoldV3Topline {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  border-top: 7px solid var(--upsSafetyBoldV3Navy);
+  padding-top: 10px;
+  color: var(--upsSafetyBoldV3Navy);
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: .12em;
+}
+.upsSafetyBoldV3HeadlinePanel {
+  margin: 18px -.55in 17px;
+  padding: 16px .55in 19px;
+  background: var(--upsSafetyBoldV3Yellow);
+  border-bottom: 8px solid var(--upsSafetyBoldV3Navy);
+}
+.upsSafetyBoldV3Eyebrow {
+  display: inline-block;
+  padding: 5px 9px;
+  background: var(--upsSafetyBoldV3Navy);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: .15em;
+}
+.upsSafetyBoldV3FrontTitle,
+.upsSafetyBoldV3BackTitle {
+  margin: 15px 0 10px;
+  color: var(--upsSafetyBoldV3Navy);
+  font-family: 'Barlow Condensed', 'Arial Narrow', Impact, sans-serif;
+  font-weight: 900;
+  letter-spacing: -.025em;
+}
+.upsSafetyBoldV3FrontTitle { font-size: 76px; line-height: 1.05; }
+.upsSafetyBoldV3BackTitle { font-size: 60px; line-height: 1.07; }
+.upsSafetyBoldV3FrontTitle > span,
+.upsSafetyBoldV3BackTitle > span { display: block; width: fit-content; }
+.upsSafetyBoldV3InkLine {
+  padding: 0 8px 2px 3px;
+  background: var(--upsSafetyBoldV3Navy);
+  color: #fff;
+}
+.upsSafetyBoldV3HeroNote { font-size: 13px; font-weight: 900; letter-spacing: .15em; }
+.upsSafetyBoldV3QuoteLabel {
+  margin: 4px 0 7px;
+  color: var(--upsSafetyBoldV3Navy);
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: .19em;
+}
+.upsSafetyBoldV3Quotation {
+  margin: 0 0 16px;
+  border-left: 6px solid var(--upsSafetyBoldV3Navy);
+  padding-left: 14px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.36;
+}
+.upsSafetyBoldV3Emphasis { background: var(--upsSafetyBoldV3Yellow); }
+.upsSafetyBoldV3Callout {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  margin-top: 2px;
+  padding: 12px 15px;
+  background: var(--upsSafetyBoldV3Navy);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.34;
+}
+.upsSafetyBoldV3CalloutTitle {
+  color: var(--upsSafetyBoldV3Yellow);
+  font: 900 22px/1.14 'Barlow Condensed', Impact, sans-serif;
+  letter-spacing: .04em;
+}
+.upsSafetyBoldV3Footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-top: auto;
+  border-top: 3px solid var(--upsSafetyBoldV3Navy);
+  padding-top: 9px;
+  color: var(--upsSafetyBoldV3Navy);
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: .1em;
+}
+.upsSafetyBoldV3ReportingSide .upsSafetyBoldV3Quotation { font-size: 15px; margin-bottom: 13px; }
+@page { size: letter; margin: 0; }
+@media print {
+  .upsSafetyBoldV3Root { padding: 0; background: #fff; print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+  .upsSafetyBoldV3Sheet { margin: 0; box-shadow: none; break-after: page; page-break-after: always; }
+  .upsSafetyBoldV3Sheet:last-child { break-after: auto; page-break-after: auto; }
+}

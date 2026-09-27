@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=Barlow:wght@400;500;600;700;800&display=swap');
+
+.ssf { --navy:#10386a; --blue:#174c90; --gold:#f6df77; --ink:#172b42; color:var(--ink); font-family:Barlow,Arial,sans-serif; background:#e9edf2; padding:24px; }
+.ssf * { box-sizing:border-box; }
+.ssf-page { width:8.5in; height:11in; margin:0 auto 24px; padding:.52in .62in .43in; background:#fff; box-shadow:0 8px 26px #10243b29; display:flex; flex-direction:column; overflow:hidden; }
+.ssf-top { display:flex; justify-content:space-between; border-top:7px solid var(--navy); padding-top:12px; color:var(--navy); font-size:11px; font-weight:800; letter-spacing:.13em; }
+.ssf-kicker { margin-top:28px; color:var(--blue); font-size:15px; font-weight:800; letter-spacing:.21em; }
+.ssf h1,.ssf h2 { font-family:'Barlow Condensed','Arial Narrow',Impact,sans-serif; font-weight:900; color:var(--navy); letter-spacing:-.025em; line-height:.91; margin:13px 0 0; }
+.ssf h1 { font-size:78px; }.ssf h2 { font-size:55px; line-height:.98; }
+.ssf h1 em,.ssf h2 em { font-style:normal; background:var(--gold); box-shadow:7px 0 var(--gold),-3px 0 var(--gold); }
+.ssf-rule { height:4px; background:var(--navy); margin:23px 0 19px; flex:none; }
+.ssf-label { color:var(--blue); font-weight:800; letter-spacing:.16em; font-size:12px; margin-bottom:6px; }
+.ssf blockquote { margin:0 0 17px; padding:0 0 0 16px; border-left:5px solid var(--gold); font-size:19px; font-weight:600; line-height:1.24; }
+.ssf blockquote.ssf-quote-small { font-size:16px; line-height:1.28; }
+.ssf-band { background:var(--navy); color:#fff; font:800 25px/1 'Barlow Condensed',Impact,sans-serif; letter-spacing:.06em; padding:12px 16px; margin:1px 0 17px; }
+.ssf-conclusion { margin-top:1px; background:#f5f7fa; border-left:5px solid var(--blue); padding:12px 15px; font-size:16px; line-height:1.3; }
+.ssf-footer { margin-top:auto; padding-top:10px; border-top:2px solid var(--navy); display:flex; justify-content:space-between; gap:10px; color:var(--navy); font-weight:800; font-size:11px; letter-spacing:.11em; }
+.ssf-back .ssf-kicker { margin-top:36px; }.ssf-back .ssf-rule { margin-top:29px; }
+.ssf-back blockquote { font-size:21px; margin-bottom:29px; }
+.ssf-issue { border-top:2px solid var(--navy); padding-top:19px; }
+.ssf-issue p { font-size:20px; font-weight:600; line-height:1.32; margin:8px 0 22px; }
+.ssf-action { background:var(--gold); padding:20px 22px; border-left:7px solid var(--navy); }
+.ssf-action span { display:block; color:var(--navy); font:900 31px/1 'Barlow Condensed',Impact,sans-serif; }
+.ssf-action p { font-size:18px; line-height:1.31; margin:10px 0 0; font-weight:600; }
+.ssf-bottom-quote { font-size:15px; line-height:1.35; margin-top:25px; color:#33475c; }
+@page { size:letter; margin:0; }
+@media print { html,body,#root { margin:0!important; padding:0!important; background:#fff!important; } .ssf { padding:0; background:#fff; -webkit-print-color-adjust:exact; print-color-adjust:exact; } .ssf-page { margin:0; box-shadow:none; break-after:page; page-break-after:always; } .ssf-page:last-child { break-after:auto; page-break-after:auto; } }
