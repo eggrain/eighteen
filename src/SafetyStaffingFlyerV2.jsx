@@ -16,7 +16,7 @@ export default function SafetyStaffingFlyerV2() {
         <div className="ssfv2-label">ARTICLE 3 · SECTION 7</div>
         <blockquote className="ssfv2-quote-small">“The Employer agrees that the function of supervisors is the supervision of Employees and not the performance of the work of the employees they supervise.”</blockquote>
         <blockquote className="ssfv2-quote-small">“The Employer shall make every reasonable effort to maintain a sufficient workforce to staff its operations with bargaining unit employees.”</blockquote>
-        <div className="ssfv2-conclusion"><strong>Supervisors are working every day.</strong> When they perform bargaining unit work, we should ask whether enough employees have been scheduled to do that work safely.</div>
+        <div className="ssfv2-conclusion"><strong>Supervisors are working every day.</strong> That raises a straightforward safety question: are enough bargaining unit employees staffed to do the work safely?</div>
         <footer className="ssfv2-footer"><span>STAFF THE WORK. PROTECT THE PEOPLE.</span><span>TURN OVER →</span></footer>
       </section>
 

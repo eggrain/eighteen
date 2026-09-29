@@ -16,9 +16,9 @@ import SafetyStaffingFlyerV3 from "./SafetyStaffingFlyerV3";
 export default function App() {
     return <>
         <div className="App" style={{ width: "100%", maxWidth: "100vw" }}>
-            <SafetyStaffingFlyerV3  />
+            {/* <SafetyStaffingFlyerV3  /> */}
             <SafetyStaffingFlyerV2 />
-            <SafetyStaffingFlyer />
+            {/* <SafetyStaffingFlyer />
             <Article44Section1 />
             <Over70V2 />
             <Over70V3 />
@@ -29,7 +29,7 @@ export default function App() {
             <Article44Over150Flyer />
             <Article18OutOfServiceFlyerV2 />
             <Article18OutOfServiceFlyerV3 />
-            <Article18Section24FlyerV2 />
+            <Article18Section24FlyerV2 /> */}
         </div>
     </>;
 }
