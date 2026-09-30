@@ -6,7 +6,7 @@ export default function SafetyStaffingFlyerV6() {
     <main className="ssfv6">
       <section className="ssfv6-page ssfv6-front" aria-label="Flyer front: staffing and safety">
         <header className="ssfv6-top"><span>UPS NATIONAL MASTER AGREEMENT</span><span>ARTICLE 18 + ARTICLE 3</span></header>
-        <div className="ssfv6-kicker">A SAFETY CONCERN WE SHARE</div>
+        <div className="ssfv6-kicker">NOTHING COMES BEFORE SAFETY</div>
         <h1>SAFE WORK<br /><em>TAKES PEOPLE.</em></h1>
         <div className="ssfv6-rule" />
         <div className="ssfv6-label">ARTICLE 18 · PREAMBLE</div>
